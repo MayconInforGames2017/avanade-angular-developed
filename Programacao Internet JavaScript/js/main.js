@@ -56,7 +56,8 @@ for (count = 0; count <= 5; count++) {
 */
 
 var d = new Date();
-alert(d.getMonth());
-alert(d.getDay());
-alert(d.getHours());
-alert(d.getMinutes());
+//alert(d.getMonth());
+//alert(d.getDay());
+//alert(d.getHours());
+//alert(d.getMinutes());
+console.log("hoje é " + d.getDate + "/" + d.getMonth() + 1);
