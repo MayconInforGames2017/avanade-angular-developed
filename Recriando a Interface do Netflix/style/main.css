@@ -1,10 +1,10 @@
-/*
-  Definindo as cores
-*/
+
+/*Definindo as cores da tela*/
 :root {
-    --verde: #44630b;
+    --preta: #000000;
     --branco: #fff; 
     --azul:  #665cbe;
+    --verde: #3a5802;
 }
 
 *{
@@ -13,9 +13,11 @@
     box-sizing: border-box;
 }
 
+/*Elementos base*/
 body {
-    background: var(--verde);
+    background: var(--preta);
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 header .container {
@@ -27,7 +29,7 @@ header .container {
 
 header .logo {
     margin-left: 5px;
-    color: var(--branco);
+    color: var(--verde);
     font-family: 'Arial Black', Times;
     font-size: 40px;
 }
@@ -40,4 +42,26 @@ header nav a {
 
 header nav a:hover {
     color: #fff;
+}
+
+/*Game Principal*/
+.game-principal {
+    font-size: 16px;
+    background-image: url('/img/BIOMUTANT.jpg');
+
+    height: 1600px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.game-principal .descricao {
+    margin-bottom: 40px;
+}
+
+.titulo {
+    font-size: 40px;
 }
